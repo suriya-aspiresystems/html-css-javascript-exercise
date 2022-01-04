@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,112,1) 35%, rgba(0,212,255,1) 100%);
+	min-height: 100vh;
+}
+#create-account-form{
+	width: 550px;
+	padding: 50px;
+	text-transform: uppercase;
+    background: white;
+    border-top: 5px solid yellow;
+    overflow: hidden;
+}
+.container{
+	margin-bottom: 15px;
+	width: 100%;
+	margin-top: 5px;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 6px solid red;
+    background-color: lightgrey;
+	background-color: palegoldenrod;
+}
+.input-group{
+	margin: 10px 0px;
+	position: relative;
+}
+.input-group label{
+	/*inline-block to give some margin*/
+	display: inline-block; 
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.input-group input{
+	/*block to occupy full width*/
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+.error input{
+	border: 3px solid red;
+} 
+.success input{
+	border: 3px solid green;
+}
+.input-group i{
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	visibility: hidden;
+}
+.success i.fa-check-circle{
+	visibility: visible;
+	color: green;
+}
+.error i.fa-exclamation-circle{
+	visibility: visible;
+	color: red;
+}
+.input-group p{
+	color: red;
+	font-size:15px;
+	visibility: hidden;
+}
+.error p{
+	visibility: visible;
+}
+.btn{
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: green;
+	border: none;
+	margin-top: 10px;
+}
+.gender{
+	margin-bottom: 20px;
+}
+.gender input{
+	display:inline;
+	margin: 0 10px 0 10px;
+}
+.city select{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.agree input{
+	margin-bottom: 15px;
+}

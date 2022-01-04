@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<form id="create-account-form" action="index.html" method="GET">
+		<div class="container">
+			<h3>Registration Form</h3>
+		</div>
+	    <div class="input-group">
+	    	<label for="name">Name:</label>
+	    	<input type="text" name="Name" id="Name" placeholder="Name.." required>
+	        <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+	    </div>	
+	    <div class="input-group">
+	    	<label for="email">Email:</label>
+	    	<input type="email" name="email" id="email" placeholder="Email" required>
+	    	<i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+	    </div>
+	    <div class="input-group">
+	    	<label for="password">ConfirmPassword</label>
+	    	<input type="password" name="password" id="password" placeholder="Password..." required>
+	    	<i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+	    </div>
+	    <div class="input-group">
+	    	<label for="confirmPassword">ConfirmPassword</label>
+	    	<input type="password" name="confirmPassword" id="confirm-Password" placeholder="Re-type Password..." required>
+	    	<i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+	    </div>
+	    <div class="gender"> 
+	    	<!-- <label for="gender">Gender</label><br> -->
+	    	<input type="radio" name="gender" required>Male
+	    	<input type="radio" name="gender" required>Female
+	    </div>
+	    <div class="city">
+	    	<label for="country"></label>
+	    	<select for="country" required>
+	    		<option>Select a City</option>
+	    		<option>Chennai</option>
+	    		<option>Coimbatore</option>
+	    		<option>Salem</option>
+	    		<option>Tirunelveli</option>
+	    		<option>Tiruppur</option>
+	    		<option>Vellore</option>
+	    		<option>Erode</option>
+	    		<option>Thoothukkudi</option>
+	    		<option>Virudhunagar</option>
+	    		<option>Karur</option>
+	    		<option>Kanchipuram</option>
+	    		<option>Kumarapalayam</option>
+	    		<option>Karaikkudi</option>
+                <option>Neyveli</option>
+	    	</select>
+	    </div>
+	    <div class="agree">
+	    	<label for="agree"></label>
+	    	<input type="checkbox" name="agree" required> I agree with terms and conditions
+	    	<br>
+	    </div>
+	    <button type="submit" name="button" class="btn" onclick="validateForm()">Register</button>
+	</form>
+	<script type="text/javascript" src="validate.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*body{
+	background-image: url('download.jpg');
+	height: 100px;
+	width: 100px;
+	padding: 50px;
+	margin-left: 200px;
+	background-repeat: no-repeat;
+	background-position:  top;
+}*/
+.image{
+	text-align: center;
+}
+.para{
+	text-align: center;
+}
