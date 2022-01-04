@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkbox User Input</title>
+</head>
+<body>
+	<input type="text" name="" id="text1" placeholder ="Enter anything">
+	<br><br>
+	<input type="password" name="" id="pswd" placeholder="Enter password">
+	<br><br>
+	<button id="btn" onclick="myFunction()">Click Me</button>
+	<script type="text/javascript">
+		function myFunction(){
+			var str=document.getElementById('text1').value;
+			var str2=document.getElementById('pswd').value;
+			if(str===str2){
+				alert("Username and password should not to be same");
+			}
+			else{
+				alert("Account created Successfully");
+			}
+
+		}
+	</script>
+</body>
+</html>

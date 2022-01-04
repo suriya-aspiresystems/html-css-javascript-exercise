@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objects in JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var Car={
+		// 	car_brand:"Tesla",
+		// 	car_model:"Model 5",
+		// 	price:24000,
+		// 	teslaAutoPilot:function () {
+		// 		document.write("This tesla car has auto pilot");
+		// 	}
+		// }
+		// document.write(Car.price);
+		// document.write("<br>");
+		// Car.teslaAutoPilot();
+		//Constructor Function
+		function Company(Company_name,Company_year,Company_bond){
+			this.Company_name=Company_name;
+			this.Company_year=Company_year;
+			this.Company_bond=Company_bond;
+			this.Companynew=function()
+			{
+				document.write("This tesla car has auto pilot");
+			}
+		}
+		var c1=new Company("Capgemini","1998","2 years");
+		var c2=new Company("Aspire","1996","3 years");
+		c1.Companynew();
+		document.write("<br>");
+		c1.Company_name="Wipro";
+		document.write(c1.Company_name);
+		document.write("<br>");
+		document.write(c2.Company_year);
+		//
+		var mug = {
+          capacity: "10 fluid ounces",
+          customer_message: function (desired_size) {
+          if (desired_size > 10) { return "This mug is not large enough for you" };
+            }
+           }
+           document.write("<br>");
+           document.write(mug.customer_message(13));
+           // 
+           document.write("<br>");
+           var student = {
+             name : "David Rayy",
+             sclass : "VI",
+             rollno : 12 
+           };
+           document.write(student.name+" "+student.sclass+" "+student.rollno);
+           document.write("<br>");
+           document.write(student.rollno);
+           document.write("<br>");
+           delete student.rollno;
+           document.write(student.rollno);
+	</script>
+</body>
+</html>

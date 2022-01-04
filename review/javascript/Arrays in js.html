@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays in js</title>
+</head>
+<body>
+	<script>
+		var company1="Aspire Systems";
+		var company2=" Capgemini ";
+		var company3=" CTS ";
+		var result=["Aspire Systems","Capgemini","CTS"];
+		document.write(result[2]+" ");
+		document.write("<br>");
+		//Array methods
+		var arr1=new Array("Suriya","Karthick","Saravan");
+		arr1.push("Bala");
+		arr1.shift();
+		arr1.unshift("Suriya");
+		for(var i=0;i<arr1.length;i++){
+			document.write(arr1[i]+", ");
+		}
+		// adding new element in an array using length
+		document.write("<br>");
+		const colleges=["SECE","SKCET","SREC"];
+		colleges[colleges.length]="PSG,HIET";
+		document.write(colleges);
+	</script>
+</body> 
+</htm l>

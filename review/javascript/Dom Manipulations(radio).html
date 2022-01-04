@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="radio" name="grp1" id="rd1" value="Suriya Narayan">Suriya Narayan</input><br><br>
+	<input type="radio" name="grp1" id="rd2" value="Karthick">Karthick</input><br><br>
+	<button onclick=" return myFunction()">Click Me</button>
+	<script type="text/javascript">
+		function myFunction(){
+		  var rd1=document.getElementById("rd1");
+		  var rd2=document.getElementById("rd2");
+          if(rd1.checked===true){
+        	alert(rd1.value);
+        }
+        else if(rd2.checked===true){
+        	alert(rd2.value);
+        }
+        else{
+        	alert("Nothing is clicked");
+        }
+    }
+	</script>
+</body>
+</html>
