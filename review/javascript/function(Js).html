@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function 
+        function add(a,b){
+            return a+b;
+        }
+        let a=parseFloat(prompt('Enter first number:'));
+        let b=parseFloat(prompt("Enter the second number;"));
+        let result=add(a,b);
+        document.write(`The Addition of Two Numbers:${result}`);
+        document.write("<br>");
+        //Function are Objects
+        function Book(type,author){
+            this.type=type;
+            this.author=author;
+            this.getDetails=function(){
+                return this.type+" wriiten by "+this.author;
+            }
+        }
+        var book= new Book("Jungle-Book","J.k.Rowling");
+        document.write(book.getDetails());
+    </script>
+</body>
+</html>

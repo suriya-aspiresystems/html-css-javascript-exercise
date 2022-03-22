@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box User Input</title>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="Enter Anything">
+    <br><br>
+    <input type="password" id="pass1" placeholder="Enter your Password">
+    <br><br>
+    <button id="btn" onclick="accountCreate();">Click Me!</button>
+    <br><br>
+    <script>
+        function accountCreate(){
+            var str=document.getElementById("text1").value;
+            var str2=document.getElementById("pass1").value;
+            if(str===str2){
+                alert("Username and password Should not be Same");
+            }
+            else{
+                alert("Account Created Successfully");
+            }
+        }
+    </script>
+</body>
+</html>
