@@ -7,26 +7,72 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="array1();">Array1</button>
+    <div id="demo"></div>
     <script>
-        //Push to add items in front of array
-        const array1=["suriya","arun","muthu"];
-        array1.push("hello","one");
-        document.write("After Push:",(array1));
+    // function array1(){
+        document.writeln("Array1 elements:"+"<br>");
+        //Getting array items using loop
+        let arr1=["shoe","bag","socks","bottle","tiffinbox"];
+        for(let i=0;i<arr1.length;i++){
+            document.write(`The Array elements are ${arr1[i]}`+"<br>");
+        }
+    //     let text="";
+    //     let arr1=["shoe","bag","socks","bottle","tiffinbox"];
+    //     arr1.forEach(myFunc);
+    //     document.getElementById("demo").innerHTML=text;
+    //     function myFunc(item,index){
+    //         text=text+"Array Elements are " +item+"<br>";
+    //     }
+
+    // }
         document.write("<br>");
-        //Pop to delete items 
-        const array2=["two","1","three"];
-        array2.pop();
-        document.write("After Pop:",(array2));
+        document.writeln("Array2 elements:"+"<br>");
+        //Using Array literal
+        let arr2=new Array();
+        arr2[0]="one";
+        arr2[1]="two";
+        arr2[2]="three";
+        arr2[3]="four";
+        arr2[4]="five";
+        for(let i=0;i<arr2.length;i++){
+            document.write(`The Array elements are ${arr2[i]}`+"<br>");
+        }
         document.write("<br>");
-        //Unshift to add items in front
-        var number_arr = [ 20, 30, 40 ];
-        number_arr.unshift(10, 20);
-        document.write("After unshift:",+number_arr);
+        document.writeln("Array3 elements after using spread operator:"+"<br>");
+        let arr3=[...arr1,...arr2];
+        for(let i=0;i<arr3.length;i++){
+            document.write(`The Array Elements are ${arr3[i]}`+"<br>");
+        }
+        //Using reverse operator
+        let rev_arr1=arr1.reverse();
+        document.write("<br>")
+        document.write("Array3 elements after reverse():"+rev_arr1);
+        //push
+        arr1.push("seven","teo");
         document.write("<br>");
-        //Shift to delete items
-        const arr=["rem","px"];
-        document.write("After Shift:"+(arr.shift()));
-       
+        document.write("The array elements after push():",arr1);
+        //pop
+        arr2.pop();
+        document.write("<br>");
+        document.write("The array elements after pop():",arr2);
+        //shift
+        arr2.unshift("sweet","joy");
+        document.write("<br>");
+        document.write("The array elements after unshift():",arr2);
+        //shift
+        arr3.shift();
+        document.write("<br>");
+        document.write("The array elements after shift(): ",arr3);
+        arr2.splice(1,3,"suriya","vijay","chand");
+        document.write("<br>");
+        document.write("The Array elements after splice():",arr2);
+        //slice
+        let arr4=["html","css","javascript","es6","php"];//
+        var result=arr4.slice(-3,4);
+        document.write("<br>");
+        document.write("The Array elements after slice():",result);
+
     </script>
 </body>
 </html>

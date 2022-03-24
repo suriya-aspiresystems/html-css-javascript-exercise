@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str1="Geeksfor Geeks is a beautiful website";
+        document.write("<br>");
+        document.write(str1.charAt(0));
+        //charCodeAt->ascii
+        document.write("<br>");
+        var str2="Suriya";
+        document.write(str2.charCodeAt(3));
+        //concat()
+        document.write("<br>");
+        var str3=str1.concat(" ",str2);
+        document.write(str3);
+        //endsWith()
+        document.write("<br>");
+        document.write("Str after endsWith(): ",str1.endsWith('ite'));
+        //indexOf()
+        document.write("<br>");
+        document.write("Str1 after using indexOf() ",str1.indexOf('ee'));
+        //repeat()
+        document.write("<br>");
+        document.write("Str1 using repeat(): ",str1.repeat(5));
+        //replace()
+        document.write("<br>");
+        document.write("The str2 after replace(): ",str2.replace('Su','ni'));
+    </script>
+</body>
+</html>
