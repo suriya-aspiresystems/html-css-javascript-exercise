@@ -1,0 +1,6 @@
+<?php
+   $date=new DateTime();
+   date_date_set($date,2019,15,17);
+   print("Date: ".date_format($date,'Y/m/d'));
+   //Adds to the parent element
+?>
