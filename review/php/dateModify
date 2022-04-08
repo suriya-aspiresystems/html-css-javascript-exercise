@@ -1,0 +1,5 @@
+<?php
+   //Modifying the date
+   $date = date_modify(new DateTime(), "+15 day");   
+   print("Date: ".date_format($date, "Y/m/d"));
+?>
