@@ -1,0 +1,7 @@
+<?php
+   $dateString = '11-06-2012 12:50 GMT';
+   $dateTime = date_create($dateString);
+   print("Date: ".$dateTime->format('d-m-y')); 
+   print("\n");
+   print("Time: ".$dateTime->format('H:i:s')); 
+?>
