@@ -1,0 +1,5 @@
+<?php
+  $dateTime = date_create();
+  print("Date and Time is:".date_format($dateTime,'d-m-y H:i:s'));
+  // prints the current time and date
+?>
