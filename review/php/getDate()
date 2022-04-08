@@ -1,0 +1,5 @@
+<?php
+   $info = getdate();
+   print_r($info); 
+   //Array as Output
+?>
