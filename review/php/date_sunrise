@@ -1,0 +1,4 @@
+<?php
+   $sun_info = date_sunrise("02-17-2012");
+   print_r($sun_info);
+?>
