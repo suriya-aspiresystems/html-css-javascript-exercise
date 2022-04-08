@@ -1,0 +1,6 @@
+<?php
+   $timestamp = strtotime('1st February 2014');   
+   echo idate('y', $timestamp);
+   echo"\n";
+   echo idate('t', $timestamp);
+?>
