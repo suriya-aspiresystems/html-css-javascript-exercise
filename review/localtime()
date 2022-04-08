@@ -1,0 +1,8 @@
+<?php
+  
+// Displaying the local time as
+// a numerically indexed array
+echo ("The local time is :");
+print_r(localtime());
+  
+?>
