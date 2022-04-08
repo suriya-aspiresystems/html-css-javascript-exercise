@@ -1,0 +1,7 @@
+<?php
+   //setting the timezone
+   $tz = 'Indian/Mahe';   
+   date_default_timezone_set($tz);
+   $timeZone = date_default_timezone_get();
+   print("Default timezone: ".$timeZone);
+?>
