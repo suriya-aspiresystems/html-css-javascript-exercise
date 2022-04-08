@@ -1,0 +1,6 @@
+<?php
+   $date = gmstrftime("%A %d %B %G");
+   $time = gmstrftime("%T");
+   print("Date: ".$date ."\n");
+   print("Time: ".$time);
+?>
