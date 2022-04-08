@@ -1,0 +1,6 @@
+<?php
+  $dateString = '2019/05/07 12:41:09';
+  $dateTimeObj = date_create($dateString);
+  $date = date_format($dateTimeObj,'d-m-y H:i:s');
+  echo "Date and Time: ". $date;
+?>
