@@ -1,0 +1,4 @@
+<?php
+   $date = gmdate("D M d Y");
+   print("Date: ".$date);
+?>
