@@ -1,0 +1,7 @@
+<?php
+   //Creating a date
+   $date = new DateTime();
+   //Setting the ISO date
+   date_isodate_set($date, 2019, 03, 3);   
+   print("Date: ".date_format($date, "Y/m/d"));
+?>
