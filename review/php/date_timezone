@@ -1,0 +1,6 @@
+<?php
+   $date = date_create("25-09-1989"); 
+   $tz = new DateTimeZone('Indian/Mahe');   
+   $res = date_timezone_set($date, $tz);   
+   print("Timezone: ".timezone_name_get(date_timezone_get($date)) );
+?>
