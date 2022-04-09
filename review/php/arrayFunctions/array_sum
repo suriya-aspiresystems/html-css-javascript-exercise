@@ -1,0 +1,5 @@
+<?php
+   $ba = array(2, 4, 6, 8);
+   echo "sum(ba) = " . array_sum($ba);
+   print "\n" ;
+ ?>
