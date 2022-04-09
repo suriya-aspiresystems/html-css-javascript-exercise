@@ -1,0 +1,9 @@
+<?php
+   //Creating a DateTime object
+   $date = date_create("25-09-2019");
+   //Adding interval to the date
+   $res = date_sub($date, new DateInterval('PT10H30S'));   
+   //formatting the date to print it
+   $format = date_format( $res, "d-m-Y H:i:s");
+   print($format);
+?>
