@@ -1,0 +1,5 @@
+<?php
+   $tz = "Indian/mahe";
+   $res = timezone_open($tz);   
+   print_r($res);
+?>
