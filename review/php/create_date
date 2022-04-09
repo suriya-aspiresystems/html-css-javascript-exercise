@@ -1,0 +1,5 @@
+<?php
+   $time = "3year + 3months + 26 day + 12 hours+ 30 minutes +23 seconds";
+   $interval = date_interval_create_from_date_string($time);
+   print_r($interval);
+?>
