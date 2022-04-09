@@ -1,0 +1,8 @@
+<?php
+   //Creating a DateTime object
+   $date = "25-Mar-1989";
+   $format = "d-M-Y";
+   $res = date_create_from_format($format, $date);
+   print(date_format($res, "Y-m-d"));
+?>
+Thi
