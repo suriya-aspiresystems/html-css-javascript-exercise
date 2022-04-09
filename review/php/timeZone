@@ -1,0 +1,4 @@
+<?php
+   $res = timezone_name_from_abbr("PST");   
+   print($res);
+?>
