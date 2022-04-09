@@ -1,0 +1,7 @@
+<?php
+   $input1 = array(1, 2, 3, 4, 5);
+   $input2 = array(4, 5, 6);
+
+   $result = array_diff_key($input1, $input2);
+   print_r($result);
+?>
