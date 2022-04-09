@@ -1,0 +1,4 @@
+<?php
+   $input = array("orange", "mango", "banana", "orange", "banana" );
+   print_r(array_count_values($input));
+?>
