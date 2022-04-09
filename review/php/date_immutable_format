@@ -1,0 +1,7 @@
+<?php
+   //Creating a DateTime object
+   $date = "25-Mar-1989";
+   $format = "d-M-Y";
+   $res = date_create_immutable_from_format($format, $date);
+   print("Date: ".date_format($res, "Y-m-d"));
+?>
