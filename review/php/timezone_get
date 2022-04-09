@@ -1,0 +1,4 @@
+<?php
+   $version = timezone_version_get();
+   print($version);
+?>
