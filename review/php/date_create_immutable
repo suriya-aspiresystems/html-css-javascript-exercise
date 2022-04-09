@@ -1,0 +1,5 @@
+<?php
+   $date_string = "2019-08-15 9:25:45";
+   $immutable = date_create_immutable($date_string);   
+   print_r($immutable);
+?>
