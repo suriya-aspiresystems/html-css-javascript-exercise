@@ -1,0 +1,5 @@
+<?php
+   date_create("215-7896-848");
+   $errors = date_get_last_errors();
+   print_r($errors);
+?
