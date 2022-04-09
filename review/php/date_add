@@ -1,0 +1,7 @@
+<?php
+   $date = date_create("25-09-1989");
+   $interval = date_interval_create_from_date_string('1025 days');
+   $res = date_add($date, $interval);   
+   $format = date_format( $res, "d-m-Y H:i:s");
+   print($format);   
+?>
