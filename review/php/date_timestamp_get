@@ -1,0 +1,5 @@
+<?php
+   $date = date_create("1952-04-27");
+   $timestamp = date_timestamp_get($date);  
+   print($timestamp);   
+?>
