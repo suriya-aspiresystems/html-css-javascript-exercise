@@ -1,0 +1,12 @@
+<?php
+   function key_compare_func($a, $b) {
+      if ($a === $b) {
+         return 0;
+      }
+      return ($a > $b)? 1: -1;
+   }
+   $input1 = array('blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4);
+   $input2 = array('green' => 5, 'blue' => 6, 'yellow' => 7, 'cyan'   => 8);
+
+   print_r(array_diff_ukey($input1,$input2,"key_compare_func"));
+?>
