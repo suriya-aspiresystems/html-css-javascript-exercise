@@ -1,0 +1,5 @@
+<?php
+   $input1 = array( "a"=>"orange", "b"=>"mango", "c"=>"banana");
+   $input2 = array( "a"=>"orange", "b"=>"apple", "c"=>"banana");
+   print_r(array_diff_assoc($input1, $input2));
+?>
