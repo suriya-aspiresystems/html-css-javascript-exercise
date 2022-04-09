@@ -1,0 +1,4 @@
+<?php
+   $input = array("a"=>"Monkey","b"=>"Cat","c"=>"Dog");
+   print_r(array_keys($input))
+?>
