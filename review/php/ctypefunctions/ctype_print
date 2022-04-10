@@ -1,0 +1,19 @@
+<?php 
+
+  $str = "abc!@#$";
+  printIsPrintable($str);
+
+  $str = "a b";
+  printIsPrintable($str);
+
+  $str = "\n\t";
+  printIsPrintable($str);
+
+  function printIsPrintable($str){
+    echo "The string is: ". $str. "\n";
+    echo "Is Printable: ";
+    var_dump(ctype_print($str));
+    echo "---------\n";
+  }
+
+?>
