@@ -1,0 +1,6 @@
+<?php  
+$str ="*:F%V851P;VEN=``` ` "; // javatpoint  
+echo "Your Decode string is :".$str;  
+$encodeString ="<br>"."By using 'convert_uudecode()' function your encoded string is : ". convert_uudecode($str);  
+echo $encodeString . "<br>";  
+?>  
