@@ -1,0 +1,5 @@
+<?php   
+$str ="Hello";  
+echo "Your string is: ".$str."<br>";  
+echo "By using 'chunk_split()' function your string is: ".chunk_split($str,1,".");  
+?>
