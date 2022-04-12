@@ -1,0 +1,6 @@
+<?php  
+    $strinn1 = "An example of the wordwrap() function to break the string";  
+    $width = 10;  
+    $break = "</br>";  
+    echo wordwrap($strinn1, $width, $break);  
+?>
