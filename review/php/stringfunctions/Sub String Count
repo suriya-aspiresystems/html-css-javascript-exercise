@@ -1,0 +1,5 @@
+<?php   
+    $strin = "Good Health Good Life";  
+    $sub_str = "Good";  
+    echo substr_count($strin, $sub_str);  
+?>   
