@@ -1,0 +1,12 @@
+<?php   
+    $string = "Welcome to Aspire";  
+    $search1 = "e";  
+    echo strstr($string, $search1);  
+      
+    echo '</br>';  
+    $search2 = "ASPIRE";          //case-sensitive  
+    var_dump(strstr($string, $search2));  
+      
+    echo '</br>';  
+    var_dump(strstr($string, "WeLcOmE"));  
+?>  
