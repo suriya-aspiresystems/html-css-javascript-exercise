@@ -13,45 +13,52 @@
 	<div class="content">
 	<!-- Multistep Form -->
 		<div class="main">
-			<form action="#" class="regform" method="get" id="form">
+			<form action="index.html" class="regform" method="get" id="form">
 			<!-- Fieldsets -->
 			<fieldset id="first">
 		     <p class="subtitle">Step 1</p>
 				<h2 class="title">Create your account</h2>
-				   <div class="input-group">
+				<div class="input-group">
 				  <input class="text_field" name="email" placeholder="Email" type="text" id="email" required>
-                  <p>Error Message</p>
+                  <p></p>
               </div>
                 <div class="input-group">
-				   <input class="text_field" name="pass" placeholder="Password" type="password" value="" id="password" required>
-			       <p>Error Message</p>
+				   <input class="text_field" name="pass" placeholder="Password" type="password" id="password" required>
+			       <p></p>
 			     </div>
 			     <div class="input-group">
-				   <input class="text_field" name="cpass" placeholder="Confirm Password" type="password" id="password2" required>
-                   <p>Error Message</p>
+				   <input class="text_field" name="cpass" placeholder="Confirm Password" type="password" id="pass"  required>
+                   <p></p>
                    </div>
                    <div class="input-group">
 				   <input type="text" class="text_field" placeholder="Enter First Name" id="username" required>
-                   <p>Error Message</p>
+                   <p></p>
                    </div>
-				   <input type="text" class="text_field" placeholder="Enter Last Name">
+				   <input type="text"  placeholder="Enter Last Name">
 
-				<input id="next_btn1" onclick="next_step1() ; validateForm();" type="button" value="Next">
+				<input id="next_btn1" type="button" value="Next">
 		
 			</fieldset>
 			<fieldset id="second">
 
 				<p class="subtitle">Step 2</p>
-				<label for="DOB">DOB</label>
-				<input type="date" id="date">
+				  <label for="DOB">DOB</label>
+                <div class="input-group">
+				  <input type="date" id="date" class="input2">
+                  <p></p>
+              </div>
+              <div class="input-group">
 				<label>Gender</label>
-				<input name="gender" type="radio" value="Male">Male
-				<input name="gender" type="radio" value="Female">Female
+				<input name="gender" type="radio" value="Male" class="input2">Male
+				<input name="gender" type="radio" value="Female" class="input2">Female
+                <p></p>
+            </div>
 				<label for="address">Address</label>
-				<textarea name="address" placeholder="Address">
+				<textarea name="address" placeholder="Address" class="input2">   
 				</textarea>
+                <div class="input-group">
 				<label for="state">State</label>
-				<select id="state">
+				<select id="state" class="input2">
 				  <option value="Select">----Select State-----</option>
 				  <option value="Andhra Pradesh">Andhra Pradesh</option>
 				  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -78,13 +85,15 @@
 				  <option value="TamilNadu">TamilNadu</option>
 				  <option value="West Bengal"></option>
 				</select>
+				<p></p>
+            </div>
 				<div class="input-group">
-				<label for="label">Mobile No</label>
-				<input type="tel" name="number" id="number">
-				<p>Error Message</p>
+                    <label for="label">Mobile No</label>
+                    <input type="tel" name="number" id="number" class="input2">
+                    <p></p>
 				</div>
 				<input type="button" value="Previous" onclick="fprev()">
-				<input id="next_btn2" name="next" onclick="fnext(); validateNumber();" type="button" value="Next">
+				<input id="next" name="next" type="button" value="Next">
 			</fieldset>
 				<fieldset id="third">
 				<p class="subtitle">Step 3</p>
@@ -98,30 +107,44 @@
 				</fieldset>
 				<fieldset id="fourth">
 				<p class="subtitle">Step 4</p>
+				<div class="input-group">
 				<label for="graduation">Graduation</label>
-				<select id="Graduation">
+				<select id="Graduation" class="input_text">
 					<option value="Select">----Select Graduation----</option>
 					<option value="SSLC">SSLC</option>
 					<option value="HSC">HSC</option>
 					<option value="B.E/B.Tech">B.E/B.Tech</option>
+					<option value="Diploma">Diploma</option>
+					<option value="Arts and Science">Arts and Science</option>
 				</select>
+				<p></p>
+				</div>
+				<div class="input-group">
 				<label for="passing Year">Passing Year</label>
-				<input type="month" name="month" id="month">
+				<input type="month" name="month" id="month" class="input_text">
+				<p></p>
+				</div>
 				<input id="pre_btn2" onclick="fPrev()" type="button" value="Previous">
-				<input id="next_btn2" onclick="fNext()" type="button" value="Next">
+				<input id="next_btn3" type="button" value="Next">
 				</fieldset>
 				<fieldset id="fifth">
 					<p class="subtitle">Step 5</p>
+					<div class="input-group">
 					<label for="practice">Practice</label>
-					<select id="dept">
+					<select id="practice">
 						<option value="Select Practice">---------Select Practice--------</option>
 						<option value="DOT NET">DOT NET</option>
 						<option value="LAMP">LAMP</option>
 						<option value="BFS">BFS</option>
 					</select>
-					<input type="checkbox" id="check">Please Agree To Terms and Conditions
+					<p></p>
+					</div>
+					<div class="input-group">
+					<input type="checkbox" id="check" id="btn">Please Agree To Terms and Conditions
+					<p></p>
+			     	</div>
 					<input type="button" onclick="Prev()" value="Prev">
-					<input type="button" value="Register" onclick="validateForm()">
+					<input type="submit" value="Register">
 				</fieldset>
 
 			</form>
