@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Multistep Registration Form- Demo Preview</title>
+   <meta content="noindex, nofollow" name="robots">
+<!-- Including CSS File Here -->
+   <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+ <body>
+ 	<center>
+	<div class="content">
+	<!-- Multistep Form -->
+		<div class="main">
+			<form action="#" class="regform" method="get" id="form">
+			<!-- Fieldsets -->
+			<fieldset id="first">
+		     <p class="subtitle">Step 1</p>
+				<h2 class="title">Create your account</h2>
+				   <div class="input-group">
+				  <input class="text_field" name="email" placeholder="Email" type="text" id="email" required>
+                  <p>Error Message</p>
+              </div>
+                <div class="input-group">
+				   <input class="text_field" name="pass" placeholder="Password" type="password" value="" id="password" required>
+			       <p>Error Message</p>
+			     </div>
+			     <div class="input-group">
+				   <input class="text_field" name="cpass" placeholder="Confirm Password" type="password" id="password2" required>
+                   <p>Error Message</p>
+                   </div>
+                   <div class="input-group">
+				   <input type="text" class="text_field" placeholder="Enter First Name" id="username" required>
+                   <p>Error Message</p>
+                   </div>
+				   <input type="text" class="text_field" placeholder="Enter Last Name">
+
+				<input id="next_btn1" onclick="next_step1() ; validateForm();" type="button" value="Next">
+		
+			</fieldset>
+			<fieldset id="second">
+
+				<p class="subtitle">Step 2</p>
+				<label for="DOB">DOB</label>
+				<input type="date" id="date">
+				<label>Gender</label>
+				<input name="gender" type="radio" value="Male">Male
+				<input name="gender" type="radio" value="Female">Female
+				<label for="address">Address</label>
+				<textarea name="address" placeholder="Address">
+				</textarea>
+				<label for="state">State</label>
+				<select id="state">
+				  <option value="Select">----Select State-----</option>
+				  <option value="Andhra Pradesh">Andhra Pradesh</option>
+				  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+				  <option value="Bihar">Bihar</option>
+				  <option value="Chattisgarh">Chattisgarh</option>
+				  <option value="Goa">Goa</option>
+				  <option value="Gujarat">Gujarat</option>
+				  <option value="Haryana">Haryana</option>
+				  <option value="Himachal Pradesh">Himachal Pradesh</option>
+				  <option value="Jharkhand">Jharkhand</option>
+				  <option value="Karnataka">Karnataka</option>
+				  <option value="Kerala">Kerala</option>
+				  <option value="Assam">Assam</option>
+				  <option value="Madhya Pradesh">Madhya Pradesh</option>
+				  <option value="Maharastra">Maharastra</option>
+				  <option value="Manipur">Manipur</option>
+				  <option value="Meghalaya">Meghalaya</option>
+				  <option value="Mizoram">Mizoram</option>
+				  <option value="Nagaland">Nagaland</option>
+				  <option value="Odisha">Odisha</option>
+				  <option value="Punjab">Punjab</option>
+				  <option value="Rajasthan">Rajasthan</option>
+				  <option value="Sikkim">Sikkim</option>
+				  <option value="TamilNadu">TamilNadu</option>
+				  <option value="West Bengal"></option>
+				</select>
+				<div class="input-group">
+				<label for="label">Mobile No</label>
+				<input type="tel" name="number" id="number">
+				<p>Error Message</p>
+				</div>
+				<input type="button" value="Previous" onclick="fprev()">
+				<input id="next_btn2" name="next" onclick="fnext(); validateNumber();" type="button" value="Next">
+			</fieldset>
+				<fieldset id="third">
+				<p class="subtitle">Step 3</p>
+				<label for="Occupation">Occupation</label>
+				<input type="radio" value="Yes" name="y">Yes
+				<input type="radio" value="Female" name="y">No
+				<label for="experience">Experience</label>
+				<input class="year_field" type="text">
+				<input id="pre_btn2" onclick="tprev()" type="button" value="Previous">
+				<input type="button" onclick="thirdNext()" value="Next">
+				</fieldset>
+				<fieldset id="fourth">
+				<p class="subtitle">Step 4</p>
+				<label for="graduation">Graduation</label>
+				<select id="Graduation">
+					<option value="Select">----Select Graduation----</option>
+					<option value="SSLC">SSLC</option>
+					<option value="HSC">HSC</option>
+					<option value="B.E/B.Tech">B.E/B.Tech</option>
+				</select>
+				<label for="passing Year">Passing Year</label>
+				<input type="month" name="month" id="month">
+				<input id="pre_btn2" onclick="fPrev()" type="button" value="Previous">
+				<input id="next_btn2" onclick="fNext()" type="button" value="Next">
+				</fieldset>
+				<fieldset id="fifth">
+					<p class="subtitle">Step 5</p>
+					<label for="practice">Practice</label>
+					<select id="dept">
+						<option value="Select Practice">---------Select Practice--------</option>
+						<option value="DOT NET">DOT NET</option>
+						<option value="LAMP">LAMP</option>
+						<option value="BFS">BFS</option>
+					</select>
+					<input type="checkbox" id="check">Please Agree To Terms and Conditions
+					<input type="button" onclick="Prev()" value="Prev">
+					<input type="button" value="Register" onclick="validateForm()">
+				</fieldset>
+
+			</form>
+		</div>
+	</div>
+</center>
+	<script src="validation.js"></script>
+</body>
+</html>
