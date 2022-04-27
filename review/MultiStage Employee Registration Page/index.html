@@ -9,49 +9,47 @@
 
     </head>
  <body>
- 	<center>
-	<div class="content">
-	<!-- Multistep Form -->
+ 	<div class="center">
+	  <div class="content">
 		<div class="main">
 			<form action="index.html" class="regform" method="get" id="form">
-			<!-- Fieldsets -->
-			<fieldset id="first">
-		     <p class="subtitle">Step 1</p>
-				<h2 class="title">Create your account</h2>
+			<fieldset id="Basic" class="tab active">
+		     <p class="subtitle">Basic</p>
+			   <h2 class="title">Create your account</h2>
 				<div class="input-group">
 				  <input class="text_field" name="email" placeholder="Email" type="text" id="email" required>
-                  <p></p>
-              </div>
+                  <p class="alertbox"></p>
+                </div>
                 <div class="input-group">
-				   <input class="text_field" name="pass" placeholder="Password" type="password" id="password" required>
-			       <p></p>
+				   <input class="text_field" name="password" placeholder="Password" type="password" id="password" required>
+			       <p class="alertbox"></p>
 			     </div>
 			     <div class="input-group">
-				   <input class="text_field" name="cpass" placeholder="Confirm Password" type="password" id="pass"  required>
-                   <p></p>
+				   <input class="text_field" name="confirmpassword" placeholder="Confirm Password" type="password" id="ConfirmPassword"  required>
+                    <p class="alertbox"></p>
                    </div>
                    <div class="input-group">
-				   <input type="text" class="text_field" placeholder="Enter First Name" id="username" required>
-                   <p></p>
+					<input type="text" class="text_field" placeholder="Enter First Name" id="username" required>
+					<p class="alertbox"></p>
                    </div>
 				   <input type="text"  placeholder="Enter Last Name">
 
 				<input id="next_btn1" type="button" value="Next">
 		
 			</fieldset>
-			<fieldset id="second">
+			<fieldset id="Others" class="tab">
 
-				<p class="subtitle">Step 2</p>
+				<p class="subtitle">Others</p>
 				  <label for="DOB">DOB</label>
                 <div class="input-group">
 				  <input type="date" id="date" class="input2">
-                  <p></p>
+                  <p class="alertbox1"></p>
               </div>
               <div class="input-group">
 				<label>Gender</label>
 				<input name="gender" type="radio" value="Male" class="input2">Male
 				<input name="gender" type="radio" value="Female" class="input2">Female
-                <p></p>
+                <p class="alertbox"></p>
             </div>
 				<label for="address">Address</label>
 				<textarea name="address" placeholder="Address" class="input2">   
@@ -85,27 +83,27 @@
 				  <option value="TamilNadu">TamilNadu</option>
 				  <option value="West Bengal"></option>
 				</select>
-				<p></p>
+				<p class="alertbox1"></p>
             </div>
 				<div class="input-group">
                     <label for="label">Mobile No</label>
                     <input type="tel" name="number" id="number" class="input2">
-                    <p></p>
+                    <p class="alertbox1"></p>
 				</div>
-				<input type="button" value="Previous" onclick="fprev()">
-				<input id="next" name="next" type="button" value="Next">
+				<input type="button" value="Previous" onclick="previousTab(event)">
+				<input id="next" name="next" type="button" value="Next" onclick="nextTab(event)">
 			</fieldset>
-				<fieldset id="third">
-				<p class="subtitle">Step 3</p>
-				<label for="Occupation">Occupation</label>
-				<input type="radio" value="Yes" name="y">Yes
-				<input type="radio" value="Female" name="y">No
-				<label for="experience">Experience</label>
-				<input class="year_field" type="text">
-				<input id="pre_btn2" onclick="tprev()" type="button" value="Previous">
-				<input type="button" onclick="thirdNext()" value="Next">
+				<fieldset id="Work" class="tab">
+					<p class="subtitle">Work</p>
+					<label for="Occupation">Occupation</label>
+						<input type="radio" value="Yes" name="y">Yes
+						<input type="radio" value="Female" name="y">No
+						<label for="experience">Experience</label>
+						<input class="year_field" type="text">
+						<input id="pre_btn2" onclick="previousTab(event)" type="button" value="Previous">
+						<input type="button" onclick="nextTab(event)" value="Next">
 				</fieldset>
-				<fieldset id="fourth">
+				<fieldset id="Education" class="tab">
 				<p class="subtitle">Step 4</p>
 				<div class="input-group">
 				<label for="graduation">Graduation</label>
@@ -117,40 +115,40 @@
 					<option value="Diploma">Diploma</option>
 					<option value="Arts and Science">Arts and Science</option>
 				</select>
-				<p></p>
+				<p class="alertbox2"></p>
 				</div>
-				<div class="input-group">
-				<label for="passing Year">Passing Year</label>
-				<input type="month" name="month" id="month" class="input_text">
-				<p></p>
+					<div class="input-group">
+					<label for="passing Year">Passing Year</label>
+					<input type="month" name="month" id="month" class="input_text">
+					<p class="alertbox2"></p>
 				</div>
-				<input id="pre_btn2" onclick="fPrev()" type="button" value="Previous">
+				<input id="pre_btn2" onclick="previousTab(event)" type="button" value="Previous">
 				<input id="next_btn3" type="button" value="Next">
 				</fieldset>
-				<fieldset id="fifth">
-					<p class="subtitle">Step 5</p>
+				<fieldset id="Team" class="tab">
+					<p class="subtitle">Team</p>
 					<div class="input-group">
-					<label for="practice">Practice</label>
-					<select id="practice">
-						<option value="Select Practice">---------Select Practice--------</option>
-						<option value="DOT NET">DOT NET</option>
-						<option value="LAMP">LAMP</option>
-						<option value="BFS">BFS</option>
-					</select>
-					<p></p>
+						 <label for="practice">Practice</label>
+						 <select id="practice">
+							<option value="Select Practice">---------Select Practice--------</option>
+							<option value="DOT NET">DOT NET</option>
+							<option value="LAMP">LAMP</option>
+							<option value="BFS">BFS</option>
+						</select>
+						<p class="alertbox3"></p>
 					</div>
 					<div class="input-group">
-					<input type="checkbox" id="check" id="btn">Please Agree To Terms and Conditions
-					<p></p>
+					<input type="checkbox" id="check">Please Agree To Terms and Conditions
+					<p class="alertbox3"></p>
 			     	</div>
-					<input type="button" onclick="Prev()" value="Prev">
-					<input type="submit" value="Register">
+					<input type="button" onclick="previousTab(event)" value="Prev">
+					<input type="button" value="Register" id="btn">
 				</fieldset>
 
 			</form>
 		</div>
 	</div>
-</center>
+</div>
 	<script src="validation.js"></script>
 </body>
 </html>
