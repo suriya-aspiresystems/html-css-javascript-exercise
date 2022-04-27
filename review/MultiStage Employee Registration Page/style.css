@@ -9,6 +9,9 @@ body{
   text-align: center;
   margin-left: 100px;
 }
+.center{
+  text-align: center;
+}
 .main{
 float:left;
 width:650px;
@@ -17,33 +20,33 @@ margin-top:80px
 #active1{
 color:red
 }
-fieldset{
-display:none;
-width:350px;
-padding:20px;
-margin-top:50px;
-margin-left:85px;
-border-radius:5px;
-box-shadow:3px 3px 25px 1px gray
+.tab{
+  display:none;
+  width:350px;
+  padding:20px;
+  margin-top:50px;
+  margin-left:85px;
+  border-radius:5px;
+  box-shadow:3px 3px 25px 1px gray;
 }
-#first{
+.tab.active{
 display:block;
-width:350px;
-padding:20px;
-margin-top:50px;
-border-radius:5px;
-margin-left:85px;
-box-shadow:3px 3px 25px 1px gray
+  width:350px;
+  padding:20px;
+  margin-top:50px;
+  border-radius:5px;
+  margin-left:85px;
+  box-shadow:3px 3px 25px 1px gray
 }
 input[type=text],input[type=tel],input[type=password],input[type=date],input[type=number],input[type=month]{
-width:90%;
-margin:10px 0;
-height:30px;
-padding:5px;
-border:3px solid #ecb0dc;
-border-radius:4px
+  width:90%;
+  margin:10px 0;
+  height:30px;
+  padding:5px;
+  border:3px solid #ecb0dc;
+  border-radius:4px;
 }
-#second label{
+#Others label{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -51,7 +54,7 @@ border-radius:4px
   margin-bottom: 10px;
   color: red;
 }
-#second select{
+#Others select{
   width: 100%;
   margin: 10px 0;
   height: 30px;
@@ -60,33 +63,33 @@ border-radius:4px
   border-radius: 4px;
 }
 textarea{
-width:100%;
-margin:10px 0;
-height:70px;
-padding:5px;
-border:3px solid #ecb0dc;
-border-radius:4px
+  width:100%;
+  margin:10px 0;
+  height:70px;
+  padding:5px;
+  border:3px solid #ecb0dc;
+  border-radius:4px;
 }
-#third label{
+#Work label{
     display: flex;
     justify-content: flex-start;
     margin-bottom: -8px;
     margin-top: 20px;
 }
-#third input[type=radio]{
+#Work input[type=radio]{
    display: inline-block;
    margin-top: -40px;
    margin-bottom: 10px;
   
 }
-#fourth label{
+#Education  label{
     display: flex;
     justify-content: flex-start;
     margin-bottom: -8px;
     margin-top: 20px;
 
 }
-#fourth select{
+#Education select{
   display: inline-block;
   margin-top: -40px;
   margin-bottom: 10px;
@@ -97,11 +100,11 @@ border-radius:4px
   border: 3px solid #ecb0dc;
   border-radius: 4px;
 }
-#fifth label{
+#Team label{
    display: flex;
    flex-direction: column;
 }
-#fifth select{
+#Team select{
    display: inline-block;
   margin-top: -40px;
   margin-bottom: 10px;
@@ -112,31 +115,31 @@ border-radius:4px
   border: 3px solid #ecb0dc;
   border-radius: 4px;
 }
-#fifth input[type=checkbox]{
+#Team input[type=checkbox]{
   display: inline-block;
   margin-right: -5px;
 }
 
 input[type=submit],input[type=button]{
-width:120px;
-margin:15px 25px;
-padding:5px;
-height:40px;
-background-color:#a0522d;
-border:none;
-border-radius:4px;
-color:#fff;
-font-family:'Droid Serif',serif
+  width:120px;
+  margin:15px 25px;
+  padding:5px;
+  height:40px;
+  background-color:#a0522d;
+  border:none;
+  border-radius:4px;
+  color:#fff;
+  font-family:'Droid Serif',serif
 }
 h2,p{
-text-align:center;
-font-family:'Droid Serif',serif
+  text-align:center;
+  font-family:'Droid Serif',serif
 }
 li{
-margin-right:52px;
-display:inline;
-color:#c1c5cc;
-font-family:'Droid Serif',serif
+  margin-right:52px;
+  display:inline;
+  color:#c1c5cc;
+  font-family:'Droid Serif',serif;
 }
 .error input{
   border:3px solid red;
@@ -153,8 +156,28 @@ font-family:'Droid Serif',serif
   margin-top:-5px;
  
   font-size: 15px;
-  visibility: hidden;
+ 
 }
 .error p{
   visibility: visible;
 }
+.error input{
+    border:3px solid red;
+  }
+  .success input{
+     border: 3px solid green;
+  }
+  .input-group1{
+    position: relative;
+  }
+  
+  .input-group1 p{
+    color: red;
+    margin-top:-5px;
+   
+    font-size: 15px;
+    visibility: hidden;
+  }
+  .error p{
+    visibility: visible;
+  }
