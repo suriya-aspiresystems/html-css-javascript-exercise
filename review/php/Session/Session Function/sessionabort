@@ -1,0 +1,13 @@
+<?php
+    // First of all choose your path , For e.g. C:/session
+    session_save_path('Your Path here !');
+   
+    session_start();
+   
+    // Define a Session Variable
+    $_SESSION['Key'] = 'value' ;
+   
+    Var_dump(session_status() == PHP_SESSION_ACTIVE);
+   
+    // Output : bool(True) , it means you have an open session !
+?>
