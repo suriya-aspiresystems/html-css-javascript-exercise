@@ -1,0 +1,28 @@
+DELIMITER //
+mysql> CREATE PROCEDURE displayRecords()
+    -> BEGIN
+    -> Select * From Aspire;
+    -> END;
+    -> //
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> DELIMITER ;
+mysql> CALL displayRecords();
++------------+-----------+-------------+--------------------------------+------------+------------+--------+
+| EmployeeID | FirstName | LastName    | Email                          | Phone      | HireDate   | Salary |
++------------+-----------+-------------+--------------------------------+------------+------------+--------+
+|      10205 | Suriya    | Narayan     | suriya.sairam@aspiresys.com    | 7338718933 | 2021-07-21 | 360000 |
+|      10206 | Mithun    | S           | mithun.s@aspiresys.com         | 9841681116 | 2021-07-20 | 360000 |
+|      10209 | Karthick  | Prabhu      | karthick.nagaraj@aspiresys.com | 9551503994 | 2021-08-21 | 360000 |
+|      10210 | Saravanan | R           | saro.ramo@aspiresys.com        | 8939119836 | 2021-08-21 | 360000 |
+|      10210 | Saravanan | R           | saro.ramo@aspiresys.com        | 8939119836 | 2021-08-21 | 360000 |
+|      10210 | Saravanan | R           | saro.ramo@aspiresys.com        | 8939119836 | 2021-08-21 | 360000 |
+|      10210 | Saravanan | R           | saro.ramo@aspiresys.com        | 8939119836 | 2021-08-21 | 360000 |
+|      10210 | Saravanan | R           | saro.ramo@aspiresys.com        | 8939119836 | 2021-08-21 | 360000 |
+|      10211 | Bala      | Subramaniam | bala.subu@aspiresys.com        | 9841720684 | 2021-09-08 | 360000 |
+|      10211 | Bala      | Subu        | bala.subu@aspiresys.com        | 9841720684 | 2021-09-08 | 360000 |
++------------+-----------+-------------+--------------------------------+------------+------------+--------+
+10 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
