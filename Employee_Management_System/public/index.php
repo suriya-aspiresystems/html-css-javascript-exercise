@@ -1,6 +1,4 @@
 <?php
-  session_start();
-  require "../app/init.php";
 
-  $app = new App();
-?>
+require "../libraries/DatabaseConnection.php";
+$object = DatabaseConnection::getInstance();
