@@ -1,29 +1,21 @@
 <?php
 
-class DatabaseConnection{
-    private $mysqli;
-    public static $instance;
+class DatabaseConnection
+{
+    private $dbHost = "DB_HOST"; // Ip Address of database if external connection.
+    private $dbUser = "DB_USER"; // Username for DB
+    private $dbPass = "DB_PASSWORD"; // Password for DB
+    private $dbName = "DB_NAME"; // DB Name
+    private $connection;
 
-    public static function getInstance()
+    public function __construct()
     {
-        if(!isset(self::$instance))
-        {
-            self::$instance = new DatabaseConnection();
+        // $this->connection = mysqli_connect($this->dbHost, $this->dbUser, $this->dbPass, $this->dbName);
+        $this->connection = mysqli_connect("localhost", "root", "Aspire@123", "employee_management_system");
+        if (!$this->connection) {
+            echo "Failed to Connected to Database.";
         }
-        return self::$instance;
-
     }
-    private function __construct()
-    {
-       $this->mysqli = new mysqli('localhost','root','Aspire@123','employee_management_system');
-       if($this->mysqli->connect_error)
-       {
-          die($this->mysqli->connect_errno);
-       }
-       else
-       {
-          echo "Connected Successfully";
-       }
-    }
-    
 }
+
+$object = new DatabaseConnection();
