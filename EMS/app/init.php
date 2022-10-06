@@ -1,6 +1,6 @@
 <?php
 
-require "/var/www/html/EMS/app/core/config.php";
-require "/var/www/html/EMS/app/core/database.php";
-require "/var/www/html/EMS/app/core/controller.php";
-require "/var/www/html/EMS/app/core/app.php";
+require "core/config.php";
+require "core/database.php";
+require "core/controller.php";
+require "core/app.php";
