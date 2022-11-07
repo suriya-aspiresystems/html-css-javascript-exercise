@@ -1,0 +1,70 @@
+<?php
+$id = $_GET['updatedata'];
+$display = new managerDetails();
+$sql = $display->display($id);
+$row = mysqli_fetch_array($sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updatemployee</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class ="container my-5">
+        <h2>Update Manager Details</h2>
+        <form method ="POST">
+        <div class="row mb-3 my-3">
+                <label for="employeeid" class="col-sm-3 col-form-label">Manager ID</label>
+                <div class="col-sm-6">
+                    <input type="text" name="managerid" id="" class="form-control" value="<?php echo $row['manager_id']?>" placeholder="Enter your Manager ID">
+                </div>
+            </div>
+            <div class="row mb-3 my-3">
+                <label for="name" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" name="name" id="" class="form-control" value="<?php echo $row['managername']; ?>" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-6">
+                    <input type="email" name="email" id="" class="form-control" value="<?php echo $row['email']; ?>" placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="phone" class="col-sm-3 col-form-label">Phone Number</label>
+                <div class="col-sm-6">
+                    <input type="tel" name="phone" id="" class="form-control" value="<?php echo $row['phone']; ?>" placeholder="Enter your Phone Number">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="phone" class="col-sm-3 col-form-label">Department</label>
+                <div class="col-sm-6">
+                    <input type="text" name="department" id="" class="form-control" value="<?php echo $row['department']; ?>" placeholder="Enter your Department">
+                </div>
+            </div>
+            <?php     ?>
+          <div class = "row mb-3">
+            <div class="offset-sm-3 col-sm-3 d-grid">
+
+                <button class="btn btn-primary" name="sub_btn">Update</button>
+            </div>
+            <div class="col-sm-3 d-grid">
+                <a href="http://localhost/Employeemanagementsystem/public/manager" class="btn btn-outline-primary" role="button">Cancel</a>
+            </div>
+          </div>
+            
+        </form>
+		<?php
+		  $insertData = new Managerallcrud();
+		  $insertData->update();
+		?>
+    </div>
+</body>
+</html>
